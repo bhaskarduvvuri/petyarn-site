@@ -3,29 +3,39 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  padding-top: 20%;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #e4e7ee;
+  background: url(puppies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(12, 12, 12);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  color: #070c0e;
+  border: 1px solid #ccc;
+  background-color: #ffb3c8;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {

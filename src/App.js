@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import petyarn from "./petyarn.png";
+import "./App.css";
+import FileUpload from "./components/FileUpload";
+import { PetGallery } from "./components/PetGallery";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <img src={petyarn} alt="logo" className="App-logo" />
+        </div>
+        <FileUpload />
       </header>
-    </div>
+      <h2>Gallery (Click on the image to like)</h2>
+      <PetGallery />
+      <a href='https://www.freepik.com/photos/background'>Background photo created by bublikhaus - www.freepik.com</a>
+    </div >
   );
 }
 
